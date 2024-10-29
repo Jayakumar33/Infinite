@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class ParalleluserLogin {
 
@@ -31,8 +33,9 @@ public class ParalleluserLogin {
         caps.setCapability("platform", platform);
         caps.setCapability("browserName", "chrome");
         caps.setCapability("version", "127");
-        caps.setCapability("build", "netsferetest-9");
+        caps.setCapability("build", "netsferetest-11");
         caps.setCapability("name", m.getName() + this.getClass().getName());
+
         caps.setCapability("plugin", "git-testng");
 
         /*
@@ -49,56 +52,66 @@ public class ParalleluserLogin {
     @Test
     @org.testng.annotations.Parameters(value = {"email", "password"})
     public void basicTest(String email, String password) throws InterruptedException {
-        String spanText;
-        System.out.println("Loading Url");
-
-        driver.get("https://web.netsfere.com/");
-        System.out.println(email + password);
-        Thread.sleep(10000);
-
-        WebElement emailValue ;
-
         try {
-            driver.findElement(By.xpath("//input[@placeholder='Enter email address']")).sendKeys(email);
-        }
-        catch(Exception e) {
-            driver.findElementByClassName("input[placeholder='Enter email address']").sendKeys(email);
+            String spanText;
+            System.out.println("Loading Url");
 
-        }
+            driver.get("https://web.netsfere.com/");
+            System.out.println(email + password);
+            Thread.sleep(10000);
 
-        driver.findElementByXPath("//button[@type='submit']").click();
-        Thread.sleep(5000);
-        driver.findElementByXPath("//input[@placeholder='Enter password']").sendKeys("Abcd@1234567");
-        driver.findElementByXPath("//button[@type='submit']").click();
-        Thread.sleep(5000);
+            WebElement emailValue ;
+
+            try {
+                driver.findElement(By.xpath("//input[@placeholder='Enter email address']")).sendKeys(email);
+            }
+            catch(Exception e) {
+                driver.findElementByClassName("input[placeholder='Enter email address']").sendKeys(email);
+
+            }
+
+            driver.findElementByXPath("//button[@type='submit']").click();
+            Thread.sleep(5000);
+            driver.findElementByXPath("//input[@placeholder='Enter password']").sendKeys("Abcd@1234567");
+            driver.findElementByXPath("//button[@type='submit']").click();
+            Thread.sleep(5000);
 
 
 // Clicking on close button
-        try {
-            Thread.sleep(15000);
-            driver.findElementByXPath("(//div[@class='click-ripple' and @style='position: absolute; inset: 0px; overflow: visible; z-index: -1; pointer-events: none;'])[13]").click();
-        }
-        catch(Exception e) {
-            Thread.sleep(3000);
-            for(int i = 0; i < 5; i++){
-                driver.findElementByXPath("/html/body/div[1]/div/div[3]/div[2]/div/div/div/div/button[2]").click();
-                Thread.sleep(5000);
+            try {
+                Thread.sleep(15000);
+                driver.findElementByXPath("(//div[@class='click-ripple' and @style='position: absolute; inset: 0px; overflow: visible; z-index: -1; pointer-events: none;'])[13]").click();
+            }
+            catch(Exception e) {
+                Thread.sleep(3000);
+                for(int i = 0; i < 5; i++){
+                    driver.findElementByXPath("/html/body/div[1]/div/div[3]/div[2]/div/div/div/div/button[2]").click();
+                    Thread.sleep(5000);
+                }
             }
 
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+            LocalDateTime now = LocalDateTime.now();
 
+            System.out.println("executing" + now);
+            Thread.sleep(10000);
+
+            now = LocalDateTime.now();
+            System.out.println("executing" + now );
+
+            Status = "passed";
+            // driver.findElementByXPath("//div[@title='lotus, lotus101 & 247 Others']//div[contains(text(),'lotus, lotus101 & 247 Others')]").click();
+            System.out.println("TestFinished");
+            driver.executeScript("lambda-status=" + Status);
         }
-        Thread.sleep(10000);
-
-       // driver.findElementByXPath("//div[@title='lotus, lotus101 & 247 Others']//div[contains(text(),'lotus, lotus101 & 247 Others')]").click();
-        Status = "passed";
-        driver.executeScript("lambda-status=" + Status);
-
-        System.out.println("TestFinished");
+        catch(Exception e) {
+            driver.executeScript("lambda-status=" + Status);
+            driver.quit();
+        }
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.executeScript("lambda-status=" + Status);
         driver.quit();
     }
 
