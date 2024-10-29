@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="35" parallel="tests" name="Suite">
+<!--  <test thread-count="20" parallel="classes" name="Test">-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.TestNGTodo1"/>-->
+<!--      <class name="com.lambdatest.TestNGTodo2"/>-->
+<!--      <class name="com.lambdatest.testManger"/>-->
+<!--    </classes>-->
+<!--  </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+  <test name="Parallel-1" >
+    <parameter name="email" value="lotus128@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+  <test name="Parallel-2" >
+    <parameter name="email" value="lotus129@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+  <test name="Parallel-3" >
+  <parameter name="email" value="lotus130@murali.netsferetest.org"/>
+  <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+  <classes>
+    <class name="com.lambdatest.ParalleluserLogin"/>
+  </classes>
+</test>
+
+  <test name="Parallel-4" >
+    <parameter name="email" value="lotus101@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+  <test name="Parallel-5" >
+    <parameter name="email" value="lotus102@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+  <test name="Parallel-6" >
+    <parameter name="email" value="lotus103@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+
+  <test name="Parallel-7" >
+    <parameter name="email" value="lotus104@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+
+  <test name="Parallel-8" >
+    <parameter name="email" value="lotus105@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+
+  <test name="Parallel-9" >
+    <parameter name="email" value="lotus106@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+
+  <test name="Parallel-10" >
+    <parameter name="email" value="lotus107@murali.netsferetest.org"/>
+    <parameter name="password" value="Abcd@1234567"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.ParalleluserLogin"/>
+    </classes>
+  </test>
+
+
+<!--  <test name="Parallel-11" >-->
+<!--    <parameter name="email" value="lotus108@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+
+<!--  <test name="Parallel-12" >-->
+<!--    <parameter name="email" value="lotus109@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+
+<!--  <test name="Parallel-13" >-->
+<!--    <parameter name="email" value="lotus110@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+
+<!--  <test name="Parallel-14" >-->
+<!--    <parameter name="email" value="lotus111@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+
+<!--  <test name="Parallel-15" >-->
+<!--    <parameter name="email" value="lotus112@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-16" >-->
+<!--    <parameter name="email" value="lotus113@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-17" >-->
+<!--    <parameter name="email" value="lotus114@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-18" >-->
+<!--    <parameter name="email" value="lotus115@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+
+<!--  <test name="Parallel-19" >-->
+<!--    <parameter name="email" value="lotus116@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-20" >-->
+<!--    <parameter name="email" value="lotus117@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 10"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-21" >-->
+<!--    <parameter name="email" value="lotus118@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-22" >-->
+<!--    <parameter name="email" value="lotus119@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-23" >-->
+<!--    <parameter name="email" value="lotus120@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-24" >-->
+<!--    <parameter name="email" value="lotus121@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-25" >-->
+<!--    <parameter name="email" value="lotus122@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-26" >-->
+<!--    <parameter name="email" value="lotus123@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-27" >-->
+<!--    <parameter name="email" value="lotus124@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-28" >-->
+<!--    <parameter name="email" value="lotus125@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-29" >-->
+<!--    <parameter name="email" value="lotus126@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Parallel-30" >-->
+<!--    <parameter name="email" value="lotus127@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="macOS Ventura"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+</suite> <!-- Suite -->
