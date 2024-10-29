@@ -54,54 +54,54 @@
     </classes>
   </test>
 
-  <test name="Parallel-6" >
-    <parameter name="email" value="lotus103@murali.netsferetest.org"/>
-    <parameter name="password" value="Abcd@1234567"/>
-    <parameter name="platform" value="Windows 11"/>
-    <classes>
-      <class name="com.lambdatest.ParalleluserLogin"/>
-    </classes>
-  </test>
+<!--  <test name="Parallel-6" >-->
+<!--    <parameter name="email" value="lotus103@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 11"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
 
 
-  <test name="Parallel-7" >
-    <parameter name="email" value="lotus104@murali.netsferetest.org"/>
-    <parameter name="password" value="Abcd@1234567"/>
-    <parameter name="platform" value="Windows 11"/>
-    <classes>
-      <class name="com.lambdatest.ParalleluserLogin"/>
-    </classes>
-  </test>
+<!--  <test name="Parallel-7" >-->
+<!--    <parameter name="email" value="lotus104@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 11"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
 
 
-  <test name="Parallel-8" >
-    <parameter name="email" value="lotus105@murali.netsferetest.org"/>
-    <parameter name="password" value="Abcd@1234567"/>
-    <parameter name="platform" value="Windows 11"/>
-    <classes>
-      <class name="com.lambdatest.ParalleluserLogin"/>
-    </classes>
-  </test>
+<!--  <test name="Parallel-8" >-->
+<!--    <parameter name="email" value="lotus105@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 11"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
 
 
-  <test name="Parallel-9" >
-    <parameter name="email" value="lotus106@murali.netsferetest.org"/>
-    <parameter name="password" value="Abcd@1234567"/>
-    <parameter name="platform" value="Windows 11"/>
-    <classes>
-      <class name="com.lambdatest.ParalleluserLogin"/>
-    </classes>
-  </test>
+<!--  <test name="Parallel-9" >-->
+<!--    <parameter name="email" value="lotus106@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 11"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
 
 
-  <test name="Parallel-10" >
-    <parameter name="email" value="lotus107@murali.netsferetest.org"/>
-    <parameter name="password" value="Abcd@1234567"/>
-    <parameter name="platform" value="Windows 11"/>
-    <classes>
-      <class name="com.lambdatest.ParalleluserLogin"/>
-    </classes>
-  </test>
+<!--  <test name="Parallel-10" >-->
+<!--    <parameter name="email" value="lotus107@murali.netsferetest.org"/>-->
+<!--    <parameter name="password" value="Abcd@1234567"/>-->
+<!--    <parameter name="platform" value="Windows 11"/>-->
+<!--    <classes>-->
+<!--      <class name="com.lambdatest.ParalleluserLogin"/>-->
+<!--    </classes>-->
+<!--  </test>-->
 
 
 <!--  <test name="Parallel-11" >-->

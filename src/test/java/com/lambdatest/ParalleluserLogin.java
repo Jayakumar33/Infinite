@@ -31,7 +31,7 @@ public class ParalleluserLogin {
         caps.setCapability("platform", platform);
         caps.setCapability("browserName", "chrome");
         caps.setCapability("version", "127");
-        caps.setCapability("build", "netsferetest-10");
+        caps.setCapability("build", "netsferetest-9");
         caps.setCapability("name", m.getName() + this.getClass().getName());
         caps.setCapability("plugin", "git-testng");
 
@@ -87,11 +87,12 @@ public class ParalleluserLogin {
 
 
         }
-        Thread.sleep(2000);
+        Thread.sleep(10000);
 
        // driver.findElementByXPath("//div[@title='lotus, lotus101 & 247 Others']//div[contains(text(),'lotus, lotus101 & 247 Others')]").click();
         Status = "passed";
-        Thread.sleep(10000);
+        driver.executeScript("lambda-status=" + Status);
+
         System.out.println("TestFinished");
     }
 
